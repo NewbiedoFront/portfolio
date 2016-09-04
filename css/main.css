@@ -1,4 +1,4 @@
-body {
+html {
 	font-family: "Lato", sans-serif;
 	font-weight: 300;
 	line-height: 1.2;
@@ -53,7 +53,7 @@ nav {
 	align-items: center;
 	border-bottom: .3em solid #0EC31C;
 	position: fixed;
-	top: -17em;
+	top: -16em;
 	z-index: 2;
 	transition: all .3s ease-out;
 	box-shadow: 0 .5em .5em rgba(0,0,0, .3);

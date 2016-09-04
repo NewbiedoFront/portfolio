@@ -3,9 +3,11 @@ html {
 	font-weight: 300;
 	line-height: 1.2;
 	font-size: 100%;
+	color: #777;
+}
+html, body {
 	background-image: radial-gradient(circle ,transparent, #131313 -0em, #000 .1em, rgba(255, 255, 255, 0.1) 2em, transparent 2em, transparent);
 	background-size: .2em .2em;
-	color: #777;
 }
 h1,
 h2, 
@@ -126,6 +128,7 @@ button .buttonMain {
 	height: 2.4em;
 	position: absolute;
 	border-radius: .2em;
+	margin: 0 auto;
 }
 .buttonMain span{
 	position: relative;
@@ -141,7 +144,7 @@ button .buttonMain {
 }
 .menu-ativo nav {
 	position: fixed;
-	top: 0;
+	top: -1em;
 }
 .menu-ativo .buttonMain span {
 	transform: rotate(135deg);

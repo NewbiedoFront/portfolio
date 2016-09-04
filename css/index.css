@@ -30,10 +30,10 @@ figcaption {
 	}
 	figure:hover,
 	figure:focus {
-		color: #0EC31C;
+	color: #0EC31C;
     	text-shadow: 0em 0em 1em rgba(0,0,0, .4);
     	box-shadow: 0 0 .5em #0EC31C;
-		border-color: #0EC31C;
+	border-color: #0EC31C;
     	outline: none;
 	}
 }

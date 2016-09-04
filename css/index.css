@@ -1,0 +1,39 @@
+main figure {
+	width: 90%;
+	max-width: 359px;
+	max-height: 320px;
+	box-sizing: border-box;
+	border-radius: 2%;
+	background: #131313;
+	margin: .5em;
+	border: .1em solid #131313;
+	transition: all .3s ease-out;
+}
+main figure a { 
+	text-decoration: none;
+	color: #777;
+}
+main figure img {
+	max-width: 100%;
+	border-radius: 2%;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+figcaption {
+	text-align: center;
+	margin: .5em;
+	box-sizing: border-box; 
+}
+@media (min-width: 1120px) {
+	figure a {
+		outline: none;
+	}
+	figure:hover,
+	figure:focus {
+		color: #0EC31C;
+    	text-shadow: 0em 0em 1em rgba(0,0,0, .4);
+    	box-shadow: 0 0 .5em #0EC31C;
+		border-color: #0EC31C;
+    	outline: none;
+	}
+}

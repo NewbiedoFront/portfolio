@@ -1,0 +1,246 @@
+body {
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	line-height: 1.2;
+	font-size: 100%;
+	background-image: radial-gradient(circle ,transparent, #131313 -0em, #000 .1em, rgba(255, 255, 255, 0.1) 2em, transparent 2em, transparent);
+	background-size: .2em .2em;
+	color: #777;
+}
+h1,
+h2, 
+h3 {
+	font-family: "Open Sans Condensed", sans-serif;
+	font-weight: bold;
+	text-align: center;
+	font-size: 150%;
+	margin: 1em;
+}
+h2,
+h3 {
+	font-size: 120%;
+	text-align: initial;
+	margin: 1.5em;
+}
+h3 {
+	font-size: initial;
+}
+p {
+	margin: .5em 1em;
+}
+strong {
+	font-weight: bold;
+}
+[alt] {
+	font-weight: 300;
+	font-style: italic;
+	text-transform: lowercase;
+	display: flex;
+	text-align: center;
+}
+em, 
+figcaption {
+	font-style: italic;
+	font-size: 90%;
+	margin: 0 .3em 0 0;
+}
+nav {
+	background-image: radial-gradient(circle ,transparent, #131313 -0em, #000 .1em, rgba(255, 255, 255, 0.1) 2em, transparent 2em, transparent);
+	background-size: .4em .4em;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-bottom: .3em solid #0EC31C;
+	position: fixed;
+	top: -17em;
+	z-index: 2;
+	transition: all .3s ease-out;
+	box-shadow: 0 .5em .5em rgba(0,0,0, .3);
+}
+nav header {
+	padding-top: 1em;
+	display: flex;
+	align-items: center;
+
+}
+.logo,
+nav header p {
+	display: none;
+}
+nav .navbar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1em;
+	width: 80%;
+	max-width: 15em;
+}
+nav .navbar li {
+	margin: .2em;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.navbar li a {
+	display: flex;
+	justify-content: center;
+}
+nav .social-icons {
+	display: flex;
+	justify-content: center;
+	margin-top: 1em;
+	font-size: 75%;
+}
+nav .social-icons li {
+	padding: .2em;
+}
+nav a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #0EC31C;
+	font-weight: bold;
+	padding: .5em;
+	border: .5em #777; 
+	border: thin dotted;
+	width: 100%;
+}
+nav footer p {
+	margin-top: 3em;
+	font-size: 80%;
+}
+nav button {
+	background: #0EC31C;
+	border: none;
+	width: 100%;
+	height: .5em;
+	display: flex;
+	justify-content: center;
+}
+button:focus {
+	outline: none;
+}
+button .buttonMain {
+	background-color: #0EC31C; 
+	width: 3em;
+	height: 2.4em;
+	position: absolute;
+	border-radius: .2em;
+}
+.buttonMain span{
+	position: relative;
+	bottom: -.6em;
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	border-radius: .3em;
+	border-bottom: solid .3em #131313;
+	border-left: solid .3em #131313;
+	transform: rotate(-45deg);
+	transition: all .4s ease-out;
+}
+.menu-ativo nav {
+	position: fixed;
+	top: 0;
+}
+.menu-ativo .buttonMain span {
+	transform: rotate(135deg);
+	bottom: -.9em;
+}
+.menu-ativo::after {
+	content: "";
+	display: block;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	background: linear-gradient(to bottom, rgba(19, 128, 18, 0.63), rgba(126, 181, 103, 0.5));
+}
+main header {
+	padding-top: 1em;
+}
+main header  h1 {
+	padding-bottom: 1em;
+	border-bottom: .01em solid #777;
+}
+main section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+@media (min-width: 768px) { 
+	nav {
+		position: fixed;
+		top: 0;
+		width: 15em; 
+		height: 100%;
+		border-right: .3em solid #0EC31C; 
+	}
+	nav header {
+		margin: 3em 0 1em 0;
+		display: flex;
+		flex-direction: column;	
+	}
+	.logo {
+		display: inline-block;
+		border: none;
+	}
+	nav button {
+		display: none;
+	}
+	main {
+		width: 67%;
+		float: right;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+@media (min-width: 920px) {
+	main {
+		width: 73%;
+	}
+}
+@media (min-width: 1120px) {
+	nav header a{
+		text-transform: initial;
+		text-shadow: 0 0 1em green;
+		color: #0EC31C;
+   	}
+	nav header a:hover {
+		text-shadow: 0 0 1em #0EC31C;
+		box-shadow: none;
+	}
+	main {
+		width: 79%;
+	}
+
+	main .wrap {
+	width: 85%;
+	margin: 1em auto;
+}
+	main section {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	body a:hover {
+		cursor: pointer;
+	}
+	nav a { 
+		border: thin dotted;
+		color: #777;
+		transition: all .3s ease-out;
+	}
+	nav a:hover,
+	nav a:focus {
+		color: #0EC31C;
+    	text-shadow: 0em 0em 1em rgba(0,0,0, .4);
+    	box-shadow: 0 0 .5em #0EC31C;
+		border-color: #0EC31C;
+    	outline: none;
+	}
+}

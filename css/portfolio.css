@@ -1,0 +1,40 @@
+main {
+	height: 100%;
+}
+section figure{
+	text-align: center;
+}
+a:focus,
+section figure:focus {
+	outline: thin dotted;
+}
+figure img {
+	margin: .5em auto;
+	max-width: 95%; 
+}
+ main a {
+	display: inline-block;
+	color: #777;
+	text-decoration: none;
+	border-bottom: thin dotted;
+    transition: all .3s ease-out;
+}
+.descriptions li {
+	list-style-type: disc;
+	margin: 1em;
+	margin-left: 2.5em;
+}
+main footer {
+	margin: 1.5em;
+	padding: 1.5em;
+	border-top: .1em solid #777;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+@media (min-width: 1120px) { 
+	main a:hover,
+	main a:focus {
+		color: #0EC31C;
+	}
+}

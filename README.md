@@ -1,10 +1,9 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/IuryChagas/portfolio/master/img/ic.jpg" width="150">
-</p>
 
-# &#9000; Iury Chagas &#9749;
+<h1 align="center">
+ &#9000; Name here &#9749;
+</h1>
 
-[Access the website](https://iurychagas.github.io/portfolio/)
+[Access the website](https://yourwebsite.github.io/portfolio/)
 
 A simple webpage to create projects.
 
